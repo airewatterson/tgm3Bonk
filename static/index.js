@@ -157,8 +157,8 @@
     }
 
     w.SubmitResults = function() {
-        let system = "其他操作系统";
-        let area = "异世界";
+        let system = "Other OS";
+        let area = "nowhere";
         if (document.getElementById("username").value) {
             if (navigator.appVersion.indexOf("Win") !== -1) system = "Windows";
             if (navigator.appVersion.indexOf("Mac") !== -1) system = "Macintosh";
@@ -181,7 +181,7 @@
     w.gameTime = function() {
         _gameTimeNum--;
         if (_gameTimeNum <= 0) {
-            GameTimeLayer.innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;时间到！';
+            GameTimeLayer.innerHTML = '發燒列車成功！';
             gameOver();
             GameLayerBG.className += ' flash';
             createjs.Sound.play("end");
@@ -345,14 +345,14 @@
         let date2 = new Date();
         deviation_time = (date2.getTime() - _date1.getTime())
         if (deviation_time > 23000) {
-            return '倒计时多了' + ((deviation_time / 1000) - 20).toFixed(2) + "s";
+            return '多出了' + ((deviation_time / 1000) - 20).toFixed(2) + "s";
         }
         SubmitResults();
-        if (score <= 49) return '逊呐';
-        if (score <= 99) return '哼哼哼';
-        if (score <= 149) return '你是一个一个一个';
-        if (score <= 199) return '哼哼哼啊啊啊啊啊';
-        return '都撅烂了罢（恼';
+        if (score <= 49) return '發車列車LV1';
+        if (score <= 99) return '發車列車LV2';
+        if (score <= 149) return '發車列車LV3';
+        if (score <= 199) return '發車列車LV4';
+        return '您已取得所有等級五發車列車貼圖';
     }
 
     w.toStr = function(obj) {
@@ -446,5 +446,5 @@
         gameTapEvent(fakeEvent);
     }
 
-    console.log("不修改，好嘛？乱传又有什么用呢？(ˉ▽ˉ；)...");
+    console.log("我要吸彩粉~快給我彩粉~我快發病了 我 我 我的手在顫抖..我覺得我快要死了 快發彩粉給我只 要 一點點~~ 快~給~我~~~ 一口就好了 一口 一口彩粉~");
 }) (window);

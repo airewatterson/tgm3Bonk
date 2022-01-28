@@ -1,13 +1,12 @@
 <p align="center">
-  <a href="https://xiaohuang257.github.io/RapeSenpai/index.html"><img src="https://github.com/Xiaohuang257/RapeSenpai/blob/main/static/image/ClickBefore.png?raw=true" width="100" height="100" alt="RapeSenpai"></a>
+  <a href="https://techguamaster3.github.io/tgm3Bonk/index.html"><img src="https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_d6e7666179924c4aa7cf61ece6e2bcc6/default/dark/4.0" width="100" height="100" alt="RapeSenpai"></a>
 </p>
 <div align="center">
 
-# RapeSenpai
-**新概念Home游戏**
+# Bonk
+**我ㄉ拼圖ㄋ**
 </div>
 
-## 简介
-小游戏：雷普先辈
+## 簡介
+嘟嘟
 
-纯恶搞无恶意。
