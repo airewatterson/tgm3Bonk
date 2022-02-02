@@ -1,12 +1,12 @@
-<p align="center">
-  <a href="https://techguamaster3.github.io/tgm3Bonk/index.html"><img src="https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_d6e7666179924c4aa7cf61ece6e2bcc6/default/dark/4.0" width="100" height="100" alt="RapeSenpai"></a>
-</p>
-<div align="center">
+#衝蝦啦
+[]{https://media.discordapp.net/attachments/899978435210919976/938318938176106526/avatar_user.png}
 
-# Bonk
-**我ㄉ拼圖ㄋ**
-</div>
 
-## 簡介
-嘟嘟
 
+
+
+##特別感謝
+
+專案 - TechGuaMaster3/tgm3Bonk
+https://techguamaster3.github.io/tgm3Bonk/index.html
+原檔案於此，本專案僅為改作。
