@@ -400,9 +400,10 @@
     w.initSetting = function() {
         document.getElementById("username").value = cookie("username") ? cookie("username") : "";
         document.getElementById("message").value = cookie("message") ? cookie("message") : "";
-        console.log(parseFloat(cookie("volume")))
-        console.log(cookie("volume"));
-        createjs.Sound.volume = parseFloat(cookie("volume")); 
+        if(cookie("volume"))
+            createjs.Sound.volume = parseFloat(cookie("volume")); 
+        else 
+            createjs.Sound.volume = 1; 
         if (cookie("keyboard")) {
             document.getElementById("keyboard").value = cookie("keyboard");
             map = {}
