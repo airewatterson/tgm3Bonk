@@ -439,6 +439,14 @@
         window.location.href = link;
     }
 
+    w.show_block = function()   {
+        document.getElementById("BlockLayer").style.backgroundColor = "#000000"
+    }
+
+    w.hide_block = function()   {
+        document.getElementById("BlockLayer").style.backgroundColor = ""
+    }
+
     function click(index) {
         let p = _gameBBList[_gameBBListIndex];
         let base = parseInt(document.getElementById(p.id).getAttribute("num")) - p.cell;

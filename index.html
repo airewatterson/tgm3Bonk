@@ -16,6 +16,8 @@
 </head>
 
 <body onLoad="init()" oncontextmenu=self.event.returnValue=false>
+    <div id = "BlockLayer" style = "position: absolute;border-top: 10px solid #FF0000; width:640px; height: 160px; bottom: 0px">
+    </div>
     <div id="GameScoreLayer" class="BBOX SHADE bgc1" style="display:none;">
         <div style="padding:5%;margin-top: 200px;background-color: rgba(125, 181, 216, 0.3);">
             <div id="GameScoreLayer-text"></div>
@@ -57,6 +59,10 @@
                             <span class="input-group-text" id="basic-addon1">留言</span>
                         </div>
                         <input type="text" id="message" class="form-control" maxlength=50 placeholder="">
+                    </div>
+                    <div style="padding: 15px;">
+                        <button type="button" class="btn btn-primary btn-lg" onclick="show_block();">開擋板</button>
+                        <button type="button" class="btn btn-secondary btn-lg" onclick="hide_block();">關擋板</button>
                     </div>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
