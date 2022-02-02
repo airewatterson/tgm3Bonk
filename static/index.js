@@ -400,8 +400,10 @@
     w.initSetting = function() {
         document.getElementById("username").value = cookie("username") ? cookie("username") : "";
         document.getElementById("message").value = cookie("message") ? cookie("message") : "";
-        if(cookie("volume"))
+        if(cookie("volume")){
             createjs.Sound.volume = parseFloat(cookie("volume")); 
+            document.getElementById("volume").value = cookie("volume");
+        }
         else 
             createjs.Sound.volume = 1; 
         if (cookie("keyboard")) {
@@ -472,5 +474,5 @@
     }
 
     console.log("我要吸彩粉~快給我彩粉~我快發病了 我 我 我的手在顫抖..我覺得我快要死了 快發彩粉給我只 要 一點點~~ 快~給~我~~~ 一口就好了 一口 一口彩粉~");
-    console.log("2/2 06:50");
+    console.log("2/2 06:58");
 }) (window);
