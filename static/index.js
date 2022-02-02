@@ -402,7 +402,7 @@
         document.getElementById("message").value = cookie("message") ? cookie("message") : "";
         console.log(parseFloat(cookie("volume")))
         console.log(cookie("volume"));
-        //createjs.Sound.volume = parseFloat(cookie("volume")); 
+        createjs.Sound.volume = parseFloat(cookie("volume")); 
         if (cookie("keyboard")) {
             document.getElementById("keyboard").value = cookie("keyboard");
             map = {}
@@ -471,5 +471,5 @@
     }
 
     console.log("我要吸彩粉~快給我彩粉~我快發病了 我 我 我的手在顫抖..我覺得我快要死了 快發彩粉給我只 要 一點點~~ 快~給~我~~~ 一口就好了 一口 一口彩粉~");
-    console.log("2/2 06:47");
+    console.log("2/2 06:50");
 }) (window);
