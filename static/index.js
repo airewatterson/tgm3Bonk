@@ -400,6 +400,9 @@
     w.initSetting = function() {
         document.getElementById("username").value = cookie("username") ? cookie("username") : "";
         document.getElementById("message").value = cookie("message") ? cookie("message") : "";
+        console.log(parseFloat(cookie("volume")))
+        console.log(cookie("volume"));
+        //createjs.Sound.volume = parseFloat(cookie("volume")); 
         if (cookie("keyboard")) {
             document.getElementById("keyboard").value = cookie("keyboard");
             map = {}
@@ -421,9 +424,11 @@
     }
 
     w.save_cookie = function() {
+        console.log(((document.getElementById("volume").value/100)));
         cookie('username', document.getElementById("username").value, 100);
         cookie('message', document.getElementById("message").value, 100);
         cookie('keyboard', document.getElementById("keyboard").value, 100);
+        cookie('volume ', ((document.getElementById("volume").value/100)), 100);
         initSetting();
     }
 
@@ -466,4 +471,5 @@
     }
 
     console.log("我要吸彩粉~快給我彩粉~我快發病了 我 我 我的手在顫抖..我覺得我快要死了 快發彩粉給我只 要 一點點~~ 快~給~我~~~ 一口就好了 一口 一口彩粉~");
+    console.log("2/2 06:47");
 }) (window);
