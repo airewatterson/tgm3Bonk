@@ -187,7 +187,7 @@
     w.gameTime = function() {
         _gameTimeNum--;
         if (_gameTimeNum <= 0) {
-            GameTimeLayer.innerHTML = '發燒列車成功！';
+            GameTimeLayer.innerHTML = '衝蝦啦！！！';
             gameOver();
             GameLayerBG.className += ' flash';
             createjs.Sound.play("end");
@@ -359,11 +359,11 @@
             return '多出了' + ((deviation_time / 1000) - 20).toFixed(2) + "s";
         }
         SubmitResults();
-        if (score <= 49) return '發車列車LV1';
-        if (score <= 99) return '發車列車LV2';
-        if (score <= 149) return '發車列車LV3';
-        if (score <= 199) return '發車列車LV4';
-        return '您已取得所有發燒列車貼圖';
+        if (score <= 49) return '油蛇等級LV1';
+        if (score <= 99) return '油蛇等級LV2';
+        if (score <= 149) return '油蛇等級LV3';
+        if (score <= 199) return '油蛇等級LV4';
+        return '您已取得所有油蛇貼圖';
     }
 
     w.toStr = function(obj) {
