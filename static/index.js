@@ -401,7 +401,7 @@
         document.getElementById("username").value = cookie("username") ? cookie("username") : "";
         document.getElementById("message").value = cookie("message") ? cookie("message") : "";
         if(cookie("volume")){
-            createjs.Sound.volume = parseFloat(cookie("volume")); 
+            createjs.Sound.volume = parseFloat(cookie("volume")) / 100; 
             document.getElementById("volume").value = cookie("volume");
         }
         else 
@@ -427,11 +427,11 @@
     }
 
     w.save_cookie = function() {
-        console.log(((document.getElementById("volume").value/100)));
+        console.log(((document.getElementById("volume").value)));
         cookie('username', document.getElementById("username").value, 100);
         cookie('message', document.getElementById("message").value, 100);
         cookie('keyboard', document.getElementById("keyboard").value, 100);
-        cookie('volume ', ((document.getElementById("volume").value/100)), 100);
+        cookie('volume ', ((document.getElementById("volume").value)), 100);
         initSetting();
     }
 
