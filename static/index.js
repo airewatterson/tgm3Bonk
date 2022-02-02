@@ -10,7 +10,12 @@
     if (isDesktop) {
         document.write('<div id="gameBody">');
         document.onkeydown = function (e) {
+            console.log(e.key);
             let key = e.key.toLowerCase();
+            if (e.key === ' ' && w._windowShow === true) {
+                w.gameRestart();
+                w.hideGameScoreLayer();
+            }
             if (Object.keys(map).indexOf(key) !== -1) {
                 click(map[key])
             }
@@ -104,6 +109,7 @@
         _gameOver = false,
         _gameStart = false,
         _gameTime, _gameTimeNum, _gameScore, _date1, deviation_time;
+        _windowShow = true;
 
     w.gameInit = function() {
         createjs.Sound.registerSound({
@@ -299,6 +305,7 @@
     w.closeWelcomeLayer = function() {
         let l = document.getElementById('welcome');
         l.style.display = 'none';
+        _windowShow = false;
     }
 
     w.showWelcomeLayer = function() {
@@ -323,11 +330,13 @@
         }
         document.getElementById('GameScoreLayer-bast').innerHTML = '最佳&nbsp;&nbsp;' + bast;
         l.style.display = 'block';
+        _windowShow = true;
     }
 
     w.hideGameScoreLayer = function() {
         let l = document.getElementById('GameScoreLayer');
         l.style.display = 'none';
+        _windowShow = false;
     }
 
     w.replayBtn = function() {
@@ -352,7 +361,7 @@
         if (score <= 99) return '發車列車LV2';
         if (score <= 149) return '發車列車LV3';
         if (score <= 199) return '發車列車LV4';
-        return '您已取得所有等級五發車列車貼圖';
+        return '您已取得所有發燒列車貼圖';
     }
 
     w.toStr = function(obj) {
