@@ -212,6 +212,8 @@
             rstyle.bottom = Math.floor(j / 4) * blockSize + 'px';
             rstyle.width = blockSize + 'px';
             rstyle.height = blockSize + 'px';
+            document.getElementById("BlockLayer").style.width = (blockSize * 4) + 'px';
+            document.getElementById("BlockLayer").style.height = blockSize + 'px';
             r.className = r.className.replace(_clearttClsReg, '');
             if (i === j) {
                 _gameBBList.push({
