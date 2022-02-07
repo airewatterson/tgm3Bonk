@@ -10,7 +10,6 @@
     if (isDesktop) {
         document.write('<div id="gameBody">');
         document.onkeydown = function (e) {
-            console.log(e.key);
             let key = e.key.toLowerCase();
             if (e.key === ' ' && w._windowShow === true) {
                 w.gameRestart();
@@ -427,7 +426,6 @@
     }
 
     w.save_cookie = function() {
-        console.log(((document.getElementById("volume").value)));
         cookie('username', document.getElementById("username").value, 100);
         cookie('message', document.getElementById("message").value, 100);
         cookie('keyboard', document.getElementById("keyboard").value, 100);
